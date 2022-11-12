@@ -31,26 +31,13 @@ function Listdata({ task, id, getNewAddedItem, deleteItem }) {
 
 
   return (
-    <li
-      className="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2"
-      style={{ gap: "1rem" }}
-    >
-      <div className="d-flex align-items-center" style={{ flex: "1 1 0%" }}>
-        <input
-          className="form-control"
-          readOnly="readonly"
-          value={input}
-          ref={ref}
-          onChange={handleInput}
-        />
+    <div className=''>
+     <div className="flex mb-4 items-center">
+                <p className="w-full text-white">{input}</p>
+                <button className="flex-no-shrink p-1 ml-4 mr-2 border-2 rounded hover:text-white text-white border-green hover:bg-green"onClick={handleEdit}> {save ? "save" : "edit"}</button>
+                <button className="flex-no-shrink p-1 ml-2 border-2 rounded text-white border-red hover:text-white hover:bg-red"onClick={handleDeleteItem}>delete</button>
+            </div>
       </div>
-      <button id="edit-btn" className="btn btn-success" onClick={handleEdit}>
-        {save ? "save" : "edit"}
-      </button>
-      <button className="btn btn-danger" onClick={handleDeleteItem}>
-        delete
-      </button>
-    </li>
   )
 }
 

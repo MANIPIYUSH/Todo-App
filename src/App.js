@@ -1,10 +1,10 @@
 //mport logo from './logo.svg';
 //import './App.css'
 
-import FormSection from "./components/Form";
+import Tudu from "./components/Tudu";
 
 function App() {
-  return <FormSection/>;
+  return <Tudu/>;
     
       
         
