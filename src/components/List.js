@@ -4,8 +4,8 @@ import ListItem from "./Listdata";
 function List({ data, getNewAddedItem, deleteItem }) {
   // console.log(data, "data");
   return (
-    <ul id="task-list" className="list-group mb-0">
-      {data
+   <div>
+       {data
         ? data.map((item) => {
             // console.log(item);
             return (
@@ -18,7 +18,8 @@ function List({ data, getNewAddedItem, deleteItem }) {
             );
           })
         : ""}
-    </ul>
+
+   </div>
   );
 }
 
