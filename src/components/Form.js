@@ -7,7 +7,7 @@ function Form({ getUserInput }) {
     const handleInput = (e) => {
         setInput(e.target.value);
       };
-      const handleAdd = (e) => {
+    const handleAdd = (e) => {
         e.preventDefault();
         if (input) {
           getUserInput(input);

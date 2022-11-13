@@ -31,24 +31,17 @@ function Listdata({ task, id, getNewAddedItem, deleteItem }) {
 
 
   return (
-    <div className=''>
+    
      <div className="flex mb-4 items-center">
                 
-                {/* <input
-          className=""
-          readOnly="readonly"
-          value={input}
-          ref={ref}
-          onChange={handleInput}
-        /> */}
-              
-                <p className="w-full text-white"value={input}
-          ref={ref}
-          onChange={handleInput}></p>
+                
+          
+                <input className=" w-full" readOnly="readonly" value={input} ref={ref} onChange={handleInput} />
+                {/* <p className="w-full text-red" value={input} ref={ref} onChange={handleInput}></p> */}
                 <button className="flex-no-shrink p-1 ml-4 mr-2 border-2 rounded hover:text-white text-white border-green hover:bg-green"onClick={handleEdit}> {save ? "save" : "edit"}</button>
                 <button className="flex-no-shrink p-1 ml-2 border-2 rounded text-white border-red hover:text-white hover:bg-red"onClick={handleDeleteItem}>delete</button>
             </div>
-      </div>
+      
   )
 }
 
